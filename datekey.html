@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大特钥匙 - 隐私政策与技术支持</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.8;
+        }
+        .header {
+            background: linear-gradient(135deg, #D92B2B 0%, #B71C1C 100%);
+            color: white;
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 8px; }
+        .header p { font-size: 16px; opacity: 0.9; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px 60px;
+        }
+        .nav-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .nav-tabs a {
+            flex: 1;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+        .nav-tabs a.active, .nav-tabs a:hover {
+            background: #D92B2B;
+            color: white;
+        }
+        .section {
+            display: none;
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        .section.active { display: block; }
+        .section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #D92B2B;
+        }
+        .section h3 {
+            font-size: 17px;
+            margin: 24px 0 10px;
+            color: #333;
+        }
+        .section p, .section li {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .section ul { padding-left: 20px; }
+        .section li { margin-bottom: 6px; }
+        .highlight {
+            background: #FFF3F3;
+            border-left: 4px solid #D92B2B;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .contact-card {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #999;
+            font-size: 13px;
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 22px; }
+            .section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>大特钥匙</h1>
+    <p>离线蓝牙钥匙 - 隐私政策与技术支持</p>
+</div>
+
+<div class="container">
+    <div class="nav-tabs">
+        <a href="#privacy" class="active" onclick="showTab('privacy', this)">隐私政策</a>
+        <a href="#support" onclick="showTab('support', this)">技术支持</a>
+    </div>
+
+    <!-- 隐私政策 -->
+    <div id="privacy" class="section active">
+        <h2>隐私政策</h2>
+        <p>最后更新日期: 2026年4月11日</p>
+
+        <div class="highlight">
+            <strong>核心承诺: 大特钥匙不收集任何用户数据。</strong>
+            <br>本应用采用纯本地蓝牙技术, 所有操作均在您的设备和车辆之间直接完成, 不经过任何服务器。
+        </div>
+
+        <h3>1. 数据收集</h3>
+        <p>大特钥匙不收集、不存储、不传输任何个人信息, 包括但不限于:</p>
+        <ul>
+            <li>不收集您的姓名、电话号码、电子邮件地址等个人身份信息</li>
+            <li>不收集您的位置信息或GPS数据</li>
+            <li>不收集您的车辆识别号码或车辆信息</li>
+            <li>不收集您的使用习惯或行为数据</li>
+            <li>不使用任何第三方分析或广告SDK</li>
+        </ul>
+
+        <h3>2. 蓝牙权限</h3>
+        <p>本应用需要使用蓝牙权限来与您的特斯拉车辆建立本地连接。蓝牙通信仅在您的设备和您的车辆之间进行, 不会将任何蓝牙数据发送到外部服务器。</p>
+
+        <h3>3. 密钥存储</h3>
+        <p>应用生成的加密密钥仅存储在您设备的安全存储区域(Keychain)中, 采用NIST P-256椭圆曲线加密标准。密钥不会被上传、备份或以任何方式离开您的设备。</p>
+
+        <h3>4. 网络通信</h3>
+        <p>大特钥匙不需要网络连接即可正常工作。应用不会主动发起任何网络请求, 不连接任何远程服务器。</p>
+
+        <h3>5. 数据共享</h3>
+        <p>我们不会与任何第三方共享您的数据, 因为我们根本不收集任何数据。</p>
+
+        <h3>6. 儿童隐私</h3>
+        <p>本应用适用于所有年龄段用户(4+), 不针对儿童收集任何信息。</p>
+
+        <h3>7. 隐私政策变更</h3>
+        <p>如果我们对隐私政策进行任何更改, 将在此页面上发布更新后的版本并更新日期。</p>
+
+        <h3>8. 联系我们</h3>
+        <p>如果您对本隐私政策有任何疑问, 请通过以下方式联系我们:<br>
+        电子邮件: jok9580955@gmail.com</p>
+    </div>
+
+    <!-- 技术支持 -->
+    <div id="support" class="section">
+        <h2>技术支持</h2>
+
+        <h3>常见问题</h3>
+
+        <h3>如何配对蓝牙钥匙</h3>
+        <p>1. 打开大特钥匙应用<br>
+        2. 确保蓝牙已开启<br>
+        3. 坐进车内, 在车辆中控屏幕上选择添加钥匙<br>
+        4. 将NFC卡片放在中控扶手箱上方的读卡区域进行验证<br>
+        5. 配对完成后即可使用</p>
+
+        <h3>支持哪些车型</h3>
+        <ul>
+            <li>Model 3 (所有年款)</li>
+            <li>Model Y (所有年款)</li>
+            <li>Model S (2021年及以后)</li>
+            <li>Model X (2021年及以后)</li>
+        </ul>
+
+        <h3>需要网络连接吗</h3>
+        <p>不需要。大特钥匙完全通过本地蓝牙与车辆通信, 在没有网络的地下车库等环境中也能正常使用。</p>
+
+        <h3>Apple Watch如何使用</h3>
+        <p>首次使用时需要通过iPhone配对。配对完成后, Apple Watch可以独立使用, 无需iPhone在旁边。</p>
+
+        <h3>钥匙安全吗</h3>
+        <p>大特钥匙采用与特斯拉官方相同的NIST P-256椭圆曲线加密标准。私钥存储在设备的安全芯片中, 即使设备丢失, 他人也无法提取您的钥匙信息。您也可以随时在车辆中控屏幕上删除已配对的钥匙。</p>
+
+        <div class="contact-card">
+            <h3>联系开发者</h3>
+            <p>如果您遇到任何问题或有功能建议, 请通过以下方式联系我们:</p>
+            <p>电子邮件: jok9580955@gmail.com</p>
+            <p>我们会在24小时内回复您的问题。</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Copyright 2026 大特钥匙 DaTeKey. All Rights Reserved.</p>
+</div>
+
+<script>
+function showTab(tabId, el) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-tabs a').forEach(a => a.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    el.classList.add('active');
+}
+if (window.location.hash === '#support') {
+    showTab('support', document.querySelectorAll('.nav-tabs a')[1]);
+}
+</script>
+
+</body>
+</html>
